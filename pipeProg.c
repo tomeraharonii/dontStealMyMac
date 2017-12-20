@@ -13,6 +13,7 @@ int main()
     if(found)
     {
         system("afplay crazyAlaram.wav");
+        system("uuencode < ~/imagesnap | mail -s \"Quick! Someone is stealing your computer!!\" nyctomer@gmail.com");
     }
 }
 

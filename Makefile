@@ -12,7 +12,7 @@ CXXFLAGS = -g -Wall $(INCLUDES)
 .PHONY: default
 default: pipeProg 
 
-mdb-lookup: pipeProg.o
+mdb-lookup: pipeProg.o 
 
 .PHONY: run
 run:
@@ -20,7 +20,7 @@ run:
 
 .PHONY: clean
 clean:
-	rm -f *.o *~ a.out core pipeProg 
+	rm -f *.o *~ a.out core mdb-add mdb-lookup
 
 .PHONY: all
 all: clean default
